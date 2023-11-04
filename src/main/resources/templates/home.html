@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header">
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+<div class="container">
+
+    <div th:replace="fragments/bodyHeader :: bodyHeader" />
+
+    <div class="jumbotron">
+        <h1>LIS SHOP</h1>
+        <p class="lead"><b>MEMBER</b></p>
+        <p>
+            <a class="btn btn-lg btn-secondary" href="/members/new">MEMBER ADD</a>
+            <a class="btn btn-lg btn-secondary" href="/members">MEMBER LIST</a>
+        </p>
+        <p class="lead"><b>PRODUCT</b></p>
+        <p>
+            <a class="btn btn-lg btn-dark" href="/items/new">PRODUCT ADD</a>
+            <a class="btn btn-lg btn-dark" href="/items">PRODUCT LIST</a>
+        </p>
+        <p class="lead"><b>ORDER</b></p>
+        <p>
+            <a class="btn btn-lg btn-info" href="/order">ORDER ADD</a>
+            <a class="btn btn-lg btn-info" href="/orders">ORDER LIST</a>
+        </p>
+    </div>
+
+    <div th:replace="fragments/footer :: footer" />
+
+</div> <!-- /container -->
+
+</body>
+</html>
